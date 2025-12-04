@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Waves Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      padding: 20px;
+      line-height: 1.4;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    svg {
+      width: 100%;
+      max-width: 600px;
+      height: 70px;
+    }
+
+    .text-box {
+      margin-top: 40px;
+      padding: 15px;
+      background: white;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Aesthetic Waves + Text</h1>
+  <p>This webpage recreates the wave, bubble, drop, and fish rows shown in your drawing, using simple SVG lines and shapes. You can type your own text in the box below.</p>
+
+  <!-- Row 1: Spiky Waves -->
+  <div class="row">
+    <svg viewBox="0 0 300 60">
+      <path d="M0 40 Q10 10 20 40 T40 40 T60 40 T80 40 T100 40 T120 40 T140 40 T160 40 T180 40 T200 40 T220 40 T240 40 T260 40 T280 40 T300 40"
+            fill="none" stroke="black" stroke-width="2" />
+    </svg>
+  </div>
+
+  <!-- Row 2: Smooth Waves + Small Drops -->
+  <div class="row">
+    <svg viewBox="0 0 300 60">
+      <path d="M0 40 C20 10, 40 10, 60 40 S100 70, 140 40 S180 10, 220 40 S260 70, 300 40" fill="none" stroke="black" stroke-width="2"/>
+      <circle cx="50" cy="20" r="5" fill="black" />
+      <circle cx="120" cy="25" r="4" fill="black" />
+      <circle cx="200" cy="18" r="6" fill="black" />
+    </svg>
+  </div>
+
+  <!-- Row 3: Fish + Waves -->
+  <div class="row">
+    <svg viewBox="0 0 300 60">
+      <!-- Wave line -->
+      <path d="M0 40 C20 20, 40 20, 60 40 S100 60, 140 40 S180 20, 220 40 S260 60, 300 40" fill="none" stroke="black" stroke-width="2" />
+
+      <!-- Fish -->
+      <ellipse cx="80" cy="35" rx="10" ry="6" stroke="black" fill="none" stroke-width="2" />
+      <polygon points="92,35 102,30 102,40" stroke="black" fill="none" stroke-width="2" />
+
+      <ellipse cx="200" cy="35" rx="10" ry="6" stroke="black" fill="none" stroke-width="2" />
+      <polygon points="212,35 222,30 222,40" stroke="black" fill="none" stroke-width="2" />
+    </svg>
+  </div>
+
+  <!-- Row 4: Bigger Drops -->
+  <div class="row">
+    <svg viewBox="0 0 300 60">
+      <path d="M0 40 C20 10, 40 10, 60 40 S100 70, 140 40 S180 10, 220 40 S260 70, 300 40" fill="none" stroke="black" stroke-width="2"/>
+
+      <!-- Drops -->
+      <path d="M40 20 Q45 5 50 20 Z" fill="black" />
+      <path d="M140 18 Q145 2 150 18 Z" fill="black" />
+      <path d="M240 22 Q245 8 250 22 Z" fill="black" />
+    </svg>
+  </div>
+
+  <!-- Custom Text Box -->
+  <div class="text-box">
+    <h3>Add your own text:</h3>
+    <p>This is the main page. This is where you can then access the three pages to learn more about the way relationships work, how to keep them working, and how they can show you how to better yourself.</p>
+  </div>
+
+</body>
+</html>
